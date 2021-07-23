@@ -80,6 +80,7 @@ This subfolder contains the project's source code. It contains 2 subfolders:
 * Avoid committing data to version control.
 * Avoid committing notebook output cells (data can easily sneak into notebooks when you don't delete output cells).
 * Avoid committing credentials in `conf/`. Only the `conf/local/` folder should be used for sensitive information like access credentials.
+* Avoid writing credentials in notebooks (for example to fetch data from a SQL database)
 
 ```eval_rst
 .. note::  By default any file inside the ``conf/`` folder (and its subfolders) containing ``credentials`` in its name will be ignored via ``.gitignore``.
